@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+    
+        <title>支付页面</title>
+    </head>
+    <body onLoad="javascript:document.SEND_FORM.submit()">
+       <form name="SEND_FORM" th:action="${submitUrl }" method="post">
+		</form>
+    </body>
+</html>

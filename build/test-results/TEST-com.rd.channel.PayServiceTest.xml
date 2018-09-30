@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.rd.channel.PayServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-09-14T03:12:15" hostname="DESKTOP-1RTV6DF" time="0.735">
+  <properties/>
+  <testcase name="testQrGen" classname="com.rd.channel.PayServiceTest" time="0.735"/>
+  <system-out><![CDATA[11:12:15.810 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+11:12:15.826 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:12:15.827 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://124.172.184.76:9069][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+11:12:15.846 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://124.172.184.76:9069][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+11:12:15.848 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://124.172.184.76:9069
+11:12:15.850 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /124.172.184.76:9069
+11:12:15.882 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.199:63683<->124.172.184.76:9069
+11:12:15.882 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 80000
+11:12:15.882 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /cbhbPay/payProcess HTTP/1.1
+11:12:15.882 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+11:12:15.883 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+11:12:15.885 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /cbhbPay/payProcess HTTP/1.1
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 510
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: 124.172.184.76:9069
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.7.0_79)
+11:12:15.886 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+11:12:15.886 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /cbhbPay/payProcess HTTP/1.1[\r][\n]"
+11:12:15.886 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 510[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded; charset=UTF-8[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: 124.172.184.76:9069[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.7.0_79)[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+11:12:15.887 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "orderTime=20170914111215&charset=UTF-8&version=1.0&bizContext=%7B%22body%22%3A%22%E9%A6%99%E6%B0%B4%22%2C%22currency%22%3A%22CNY%22%2C%22detail%22%3A%22pro%E6%B5%8B%E8%AF%95%22%2C%22notifyUrl%22%3A%22http%3A%2F%2Fbaidu.com%22%2C%22totalAmount%22%3A%220.02%22%2C%22tradeNo%22%3A%22QR20170914111215%22%7D&txnType=AG0101&signType=MD5&sign=6d83dfbb0fd679a776a89608059a31c5&orgName=%E5%B9%BF%E4%B8%9C%E7%B4%AB%E9%93%B6%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&orgId=010020170908154002"
+11:12:15.915 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+11:12:15.915 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+11:12:15.915 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+11:12:15.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 14 Sep 2017 03:11:53 GMT[\r][\n]"
+11:12:15.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+11:12:15.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "2bf[\r][\n]"
+11:12:15.916 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "{"bizContext":"{\"qrCode\":\"http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D\",\"retCode\":\"RC0031\",\"retMsg\":\"[0xe8][0x8e][0xb7][0xe5][0x8f][0x96][0xe8][0xae][0xa2][0xe5][0x8d][0x95][0xe4][0xba][0x8c][0xe7][0xbb][0xb4][0xe7][0xa0][0x81][0xe6][0x88][0x90][0xe5][0x8a][0x9f]\",\"tradeNo\":\"QR20170914111215\",\"upchlRetCode\":\"RC0000\",\"upchlRetMsg\":\"[0xe8][0x8e][0xb7][0xe5][0x8f][0x96][0xe8][0xae][0xa2][0xe5][0x8d][0x95][0xe4][0xba][0x8c][0xe7][0xbb][0xb4][0xe7][0xa0][0x81][0xe6][0x88][0x90][0xe5][0x8a][0x9f]\"}","sign":"fe000e14c2a7388e812004b4b6a37ab8"}[\r][\n]"
+11:12:15.917 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+11:12:15.917 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+11:12:15.923 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+11:12:15.923 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: Apache-Coyote/1.1
+11:12:15.923 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+11:12:15.924 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 14 Sep 2017 03:11:53 GMT
+11:12:15.942 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:12:15.947 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://124.172.184.76:9069] can be kept alive indefinitely
+11:12:15.947 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://124.172.184.76:9069][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+11:12:15.947 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Cancelling request execution
+11:12:15.947 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+11:12:15.948 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+11:12:15.948 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+11:12:15.976 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]应答报文：{"bizContext":"{\"qrCode\":\"http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D\",\"retCode\":\"RC0031\",\"retMsg\":\"获取订单二维码成功\",\"tradeNo\":\"QR20170914111215\",\"upchlRetCode\":\"RC0000\",\"upchlRetMsg\":\"获取订单二维码成功\"}","sign":"fe000e14c2a7388e812004b4b6a37ab8"}
+11:12:15.976 [Test worker] INFO com.rd.channel.PayServiceTest - 回应报文：{"qrCode":"http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D","retCode":"RC0031","retMsg":"获取订单二维码成功","tradeNo":"QR20170914111215","upchlRetCode":"RC0000","upchlRetMsg":"获取订单二维码成功"}
+签名串：{"qrCode":"http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D","retCode":"RC0031","retMsg":"获取订单二维码成功","tradeNo":"QR20170914111215","upchlRetCode":"RC0000","upchlRetMsg":"获取订单二维码成功"}123456
+结果：FE000E14C2A7388E812004B4B6A37AB8
+11:12:15.977 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]业务报文：{"qrCode":"http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D","retCode":"RC0031","retMsg":"获取订单二维码成功","tradeNo":"QR20170914111215","upchlRetCode":"RC0000","upchlRetMsg":"获取订单二维码成功"}
+11:12:15.977 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]验签成功
+11:12:15.991 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]transactionId=QR20170914111215
+11:12:15.991 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]qrCode=http://mtest.cbhb.com.cn/payhpgate/keypos/mindex.html?Plain=eyJNY2hfaWQiOiIwMTAwMjAxNzA5MDgxNTQwMDIiLCJNY2hfbmFtZSI6IuW5v+S4nOe0q+mTtue9kee7nOenkeaKgOaciemZkOWFrOWPuCIsIk1lclNlcU5vIjoiUVIyMDE3MDkxNDExMTIxNSIsIlN1YmplY3QiOiLpppnmsLQiLCJUcmFuc0FtdCI6IjAuMDIifQ==&Sign=NgbNFdriBp0T3vElaUj7kvvURQyQAGLDMJ5aBsTM69Dme8ML0S6PPfxm4my9U8E9lc0QzT7nc4Yr%0AHX6Rjgyb7XQRO7eJGBfLfNnUbvHpn5JpU7F1uJ4%2FosTHmI7%2BtEALdEjMBFSAXpGXC0YXTSiFIq5P%0ArcyMWIg%2F9oEdLUKJLUo%3D
+11:12:15.992 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]retCode=RC0031
+11:12:15.992 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]retMsg=获取订单二维码成功
+11:12:15.992 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]upchlRetCode=RC0000
+11:12:15.992 [Test worker] INFO com.rd.channel.PayServiceTest - [扫码支付(主扫)测试]upchlRetmsg=获取订单二维码成功
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>支付页面</title>
+    </head>
+    <body onLoad="javascript:document.SEND_FORM.submit()">
+       <form name="SEND_FORM" th:action="${submitUrl}" method="post">
+			<input type="hidden" name="version" th:value="${version}"/>
+			<input type="hidden" name="orgId" th:value="${orgId}"/>
+			<input type="hidden" name="orgName" th:value="${orgName}"/>
+			<input type="hidden" name="TxnType" th:value="${txnType}"/>
+			<input type="hidden" name="orderTime" th:value="${orderTime}"/>
+			<input type="hidden" name="signType" th:value="${signType}"/>
+			<input type="hidden" name="sign" th:value="${sign}"/>
+			<input type="hidden" name="charset" th:value="${charset}"/>
+			<input type="hidden" name="bizContext" th:value="${bizContext}"/>
+		</form>
+    </body>
+</html>

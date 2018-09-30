@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<title>支付结果</title>
+		<link rel="stylesheet" th:href="@{/themes/pay-min.css}"></link>
+		<!-- <link rel="stylesheet" type="text/css" href="https://testmobile.payeco.com/ppi/web2/css/pay-min.css?v=74"/>
+		<script type="text/javascript" src="https://testmobile.payeco.com/ppi/web2/js/common-h5.js?v=45"></script> -->
+		
+		<style type="text/css">
+			.js-keyboard{
+				-webkit-touch-callout:none;
+				-webkit-user-select:none;
+				-khtml-user-select:none;
+				-moz-user-select:none;
+				-ms-user-select:none;
+				user-select:none;
+			}
+			.js-keyboard .wf-err-tip {
+			    border: 1px #fee1e1 solid;
+			    box-sizing: border-box;
+			    background: #fee1e1;
+			    position: relative;
+			    z-index: 1;
+			    padding: 5px;
+			    color: #f00;
+			    bottom: 0;
+			    width: 100%;
+			    text-align: center;
+			    display: none;
+			    font-size: 14px;
+			}
+			.input-select .select_div {
+			    display: inline-block;
+			}
+			.input-select .select_div select{
+			    border: 0;
+			    height: 20px;
+			    outline: none;
+			    background: transparent;
+			    font-size: 12px;
+			}
+			.keyboard-key ul li div:active{
+			    background:silver;
+			}
+			.loadDiv{
+		        width: 180px;
+		    }
+ 			
+ 			
+		</style>
+    </head>
+<body>
+<div class="box">
+<form class="notify_form_id" action="" method="get">
+    
+	    <input type="hidden" name="respDesc" value="交易系统异常，请重试"></input>
+    
+	    <input type="hidden" name="Status" value=""></input>
+    
+	    <input type="hidden" name="MerchantId" value=""></input>
+    
+	    <input type="hidden" name="PayTime" value=""></input>
+    
+	    <input type="hidden" name="Amount" value=""></input>
+    
+	    <input type="hidden" name="Version" value=""></input>
+    
+	    <input type="hidden" name="SettleDate" value=""></input>
+    
+	    <input type="hidden" name="OrderId" value=""></input>
+    
+	    <input type="hidden" name="MerchOrderId" value=""></input>
+    
+	    <input type="hidden" name="ExtData" value=""></input>
+    
+	    <input type="hidden" name="respCode" value="A013"></input>
+    
+	    <input type="hidden" name="Sign" value="ezWh64mqF6VNQgmulOf1WRIVJFF4oUraEGXercym50AbgPT9w/QWq5iZBrqutQ6K8AU0JXB0TE43GVHY4EiclIy3zPqISrvzy8oyvfZxZ/j9Yd9z4+UcCUHbJdL+Hzmd9JJSpPoOirFVh4i9Y0dpSSeNx95TjFFB5K6CUWjHAMw="></input>
+    
+</form>
+
+<div class="header">
+	<div class="header-title">
+	    
+	       <h1>支付结果</h1>
+	   
+	</div>
+	
+	<div class="tool-logo"></div>
+</div>
+
+	<div class="pay-info pay-info-error">
+        <div class="pay-shenhe">
+            <span>结果信息描述</span>
+        </div>
+        <div class="pay-results">
+            <ul>
+                <li>
+                    <span>返回码</span>
+                    <div><p th:text="${retCode}"></p></div>
+                </li>
+                <br/>
+                <li>
+                    <span>返回消息</span>
+                    <div><p th:text="${retMsg}"></p></div>
+                </li>
+            </ul>           
+        </div>
+    </div>
+
+	<div class="pay-btn pay-btn2">
+        <input type="button" value="确定" onclick="pageBackOut()"/>
+    </div>
+</div>
+
+
+
+</body>
+</html>

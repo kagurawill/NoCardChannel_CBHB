@@ -1,0 +1,34 @@
+package com.rd.channel.common.model.chanl;
+
+public class CbhbQrCodeRsp {
+
+	private String RespCode;//交易状态
+	private String RespMsg;//描述信息
+	private String Plain;//二维码地址
+	private String Sign;//签名
+	public String getRespCode() {
+		return RespCode;
+	}
+	public void setRespCode(String respCode) {
+		RespCode = respCode;
+	}
+	public String getRespMsg() {
+		return RespMsg;
+	}
+	public void setRespMsg(String respMsg) {
+		RespMsg = respMsg;
+	}
+	public String getPlain() {
+		return Plain;
+	}
+	public void setPlain(String plain) {
+		Plain = plain;
+	}
+	public String getSign() {
+		return Sign;
+	}
+	public void setSign(String sign) {
+		Sign = sign;
+	}
+	
+}
